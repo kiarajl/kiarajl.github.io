@@ -42,14 +42,25 @@
                   <p>a body less and less yours- a body, God knows, is not what makes you anyways.</p>
                 </div>
             </div>
-            <button onclick="window.location.href='https://www.poetryfoundation.org/poets/solmaz-sharif';">Solmaz Sharif</a>
+            <button onclick="window.location.href='https://www.poetryfoundation.org/poets/solmaz-sharif';">About Solmaz Sharif</a>
 
-                <button type="button" onclick="show()">Wireframe</button>
-                <script>
-                    function show() {
-                        document.getElementById('wireframe.jpg')
-                                .style.display = "block";
-                    } </script>
+             <div class="container">
+                <button type="wireframe" class="btn" onclick="openPopup()">Wireframe</button>
+                <div class="popup" id="popup">
+                    <img src="wireframe.jpg">
+                    <button type="button" onclick="closePopup()">Back</button>
+                </div>
+             </div>
+
+             <script>
+                let popup=document.getElementById("popup");
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+             </script>
     
 
             

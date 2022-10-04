@@ -64,3 +64,54 @@ button{
     box-shadow: 0 8px 16px 0 gray;
     cursor: pointer;
 }
+
+.container{
+    width: 50%;
+    height: 50vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 12px 40px;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 8px 16px 0 gray;
+}
+.popup{
+    width: 100px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transform: translate(-50%, 3%) scale(0.1);
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 500%;
+    transform: translate(-50%, 3%) scale(1);
+}
+.popup img{
+    width: 400px;
+    margin-top: -90px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 gray;
+}
