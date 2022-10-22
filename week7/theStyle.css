@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    color: rgb(192,222,245);
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+/* .food{
+    height: 180px;
+    width: 100%;
+    background: black;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+} */
+
+.food::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px dotted white;
+    width: 100%;
+    top: 20%;
+    z-index: -1;
+}
+
+.food1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px dotted white;
+    width: 100%;
+    top: 36%;
+    z-index: -1;
+}
+
+.food2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px dotted white;
+    width: 100%;
+    top: 53%;
+    z-index: -1;
+}
+
+.food3::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px dotted white;
+    width: 100%;
+    top: 70%;
+    z-index: -1;
+}
+
+.food4::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 20px dotted white;
+    width: 100%;
+    top: 87%;
+    z-index: -1;
+}
+
+.pacman{
+    height: 140px;
+    width: 140px;
+    overflow: hidden;
+    background: yellow;
+    border-radius: 50%;
+    position: relative;
+    animation: mymove 10s infinite;
+    animation-timing-function: steps(20, end);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 70%, 50% 50%, 90% 0%);
+}
+
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 1470px;}
+}
+
+.img1{
+    height: 140px;
+    width: 230px;
+    position: relative;
+    animation: mymove2 8s infinite;
+    animation-timing-function: steps(20, end);
+}
+
+@keyframes mymove2{
+    from {left: 1470px;}
+    to {left: -10px;}
+}
+
+.img2{
+    height: 140px;
+    width: 230px;
+    position: relative;
+    animation: mymove 6s infinite;
+    animation-timing-function: steps(20, end);
+}
+
+.img3{
+    height: 140px;
+    width: 230px;
+    position: relative;
+    animation: mymove2 7s infinite;
+    animation-timing-function: steps(20, end);
+}
+
+.img4{
+    height: 140px;
+    width: 150px;
+    position: relative;
+    animation: mymove2 9s infinite;
+    animation-timing-function: steps(20, end);
+}
+
+.dot{
+    height: 21px;
+    width: 21px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
