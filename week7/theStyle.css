@@ -121,11 +121,3 @@ h1{
     animation: mymove2 9s infinite;
     animation-timing-function: steps(20, end);
 }
-
-.dot{
-    height: 21px;
-    width: 21px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-}
