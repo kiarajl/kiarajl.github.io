@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(rgb(185, 94, 215),rgb(142, 100, 26));
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: arial;
+}
+
+.vids{
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hypnosis{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    top: 260px;
+    left: 46.5%;
+}
+
+.eye{
+    height: 600px;
+    width: 630px;
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    height: 370px;
+    width: 400px;
+    top: 130px;
+    left: -20px;
+}
+
+.right{
+    position: absolute;
+    height: 370px;
+    width: 400px;
+    top: 130px;
+}
+
+.button{
+    background-color: rgb(185, 94, 215);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
