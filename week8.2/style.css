@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+.girl{
+    width: 100px;
+    float: left;
+    margin-left: 35px;
+    transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg); 
+    -webkit-transform:rotate(-50deg);
+    color: rgb(241, 103, 234);
+}
+
+.girlbeam{
+    width: 100px;
+    float: left;
+    margin-left: 35px;
+    transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg); 
+    -webkit-transform:rotate(-50deg);
+    top: -30px;
+    color: rgb(241, 103, 234);
+}
+
+.loyal{
+    width: 100px;
+    float: left;
+    margin-left: 35px;
+    transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg); 
+    -webkit-transform:rotate(-50deg);
+    top: -30px;
+    color: rgb(241, 103, 234);
+}
+
+.angel{
+    width: 100px;
+    margin-left: 35px;
+    transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg); 
+    -webkit-transform:rotate(-50deg);
+    top: -60px;
+    left: 60px;
+    color: rgb(241, 103, 234);
+}
+
+.bruh{
+    width: 100px;
+    margin-left: 35px;
+    transform:rotate(-50deg);
+    -ms-transform:rotate(-50deg); 
+    -webkit-transform:rotate(-50deg);
+    top: -100px;
+    left: 90px;
+    color: rgb(241, 103, 234);
+}
