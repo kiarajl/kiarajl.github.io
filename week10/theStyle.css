@@ -1,0 +1,75 @@
+
+body {
+    background-image: url("back.jpg");
+    background-size:cover;
+    font-size: 15px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    background-image: url('unicorn.png');
+    background-size: 175px;
+    width: 185px;
+    height: 150px;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+
+.popup{
+  width: 400px;
+  background: pink;
+  border-radius: 6px;
+  position: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 5px 30px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+  font-size: 30px;
+}
+.popup p{
+  font-size: 20px;
+}
+
+.popup img{
+  width: 50%;
+  margin-top: -20px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup button{
+  width: 30%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background: rgb(202, 202, 246);
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgb(195, 169, 213)
+}

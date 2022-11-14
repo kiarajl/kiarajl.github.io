@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>week 10</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css"/>
+        <script src="jav.js" defer></script>
+        </head>
+    <body>
+       
+        <h1 id="theText">click the unicorn. do it. i dare you.</h1>
+
+        <h1 id="counter">counter: 0</h1>
+        
+      
+            <ul style="list-style: none">
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            <li><button type="unicorn" class="btn" onclick="openPopup()"></button></li>
+            </ul>
+
+        <div class="container">
+            <div class="popup" id="popup">
+                <h2>Uh oh...</h2>
+                <p>..wait I think you've killed her...</p>
+                <img src="unicorndead.png">
+                <button type="button" id="back" onclick ="closePopup()">my bad 😞.</button>
+            </div>
+         </div>
+         <div id="overlay"></div>
+
+</body>
+</html>

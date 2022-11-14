@@ -1,0 +1,125 @@
+body {
+    background-image: url("back.jpg");
+    background-size:cover;
+    font-size: 15px;
+    color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+button{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 40px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    box-shadow: 0 8px 16px 0 gray;
+    cursor: pointer;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+button:active {
+    animation-play-state: paused;
+  }
+  
+  @keyframes fall {
+    from {
+        transform: translateX(600%);
+      }
+    
+      to {
+        transform: translateX(-100%);
+      }
+  }
+
+.btn{
+    padding: 0;
+    border: none;
+    background: none;
+    background-image: url('unicorn.png');
+    background-size: 175px;
+    width: 185px;
+    height: 150px;
+}
+
+.popup{
+    width: 400px;
+    background: pink;
+    border-radius: 6px;
+    position: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); 
+    text-align: center;
+    padding: 0 5px 30px;
+    visibility: hidden;
+    transition: transform 2s, top 2s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+    font-size: 30px;
+}
+.popup p{
+    font-size: 20px;
+}
+
+.popup img{
+    width: 50%;
+    margin-top: -20px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 500%;
+    transform: translate(125%, 50%) scale(1); /*controls where popup appears*/
+}
+
+  .popup button{
+    width: 30%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(202, 202, 246);
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(195, 169, 213);
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }

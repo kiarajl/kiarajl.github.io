@@ -1,0 +1,69 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('unicornsky.jpeg');
+    background-size: cover;
+}
+
+.kill{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   transition: 200ms ease-in-out;
+   border: 1px solid rgb(250, 193, 202);
+   border-radius: 10px;
+   z-index: 10;
+   background-color: rgb(250, 193, 202);
+   width: 235px; /* [changes size of popup box] */
+   max-width: 80%;
+}
+
+.kill.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.header .closebutton{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.message{
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(213, 179, 255, .5); /* [sets the background shadow thing when it popsup] */
+    pointer-events: none; /* [so u can click open buttom when overlay isnt active] */
+}
+
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
+

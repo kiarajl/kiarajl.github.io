@@ -1,0 +1,41 @@
+
+body {
+    background-image: url("back.jpg");
+    background-size:cover;
+    font-size: 35px;
+    color: hotpink;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    background-image: url('unicorn.png');
+    background-size: 175px;
+    width: 185px;
+    height: 150px;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+
+
+button:active {
+    animation-play-state: paused;
+  }
+  
+  @keyframes fall {
+    from {
+        transform: translateX(600%);
+      }
+    
+      to {
+        transform: translateX(-100%);
+      }
+  }
