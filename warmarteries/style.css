@@ -2,15 +2,47 @@ body{
     background-color: rgb(208, 208, 208);
 }
 
+.title{
+    position: relative;
+}
 #title{
-    display: flex;
     width: 1000px;
+    height: 350px;
+    position: absolute;
+    left: 220px;
+}
+
+.catthing{
+    position: relative;
+}
+#catthing{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+.crabman{
+    position: relative;
+}
+#crabman{
+    width: 900px;
+    height: 1100px;
+    position: absolute;
+    top: 550px;
+    left: 500px;
+}
+
+.hands{
+    position: relative;
+}
+#hands{
+    width: 400px;
     height: 600px;
-    left: 1000px;
-    top: 100px;
-    margin: none;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 1000px;
+    left: 100px;
 }
 
 #catbutton{
@@ -214,7 +246,7 @@ body{
     display: inline-block;
     font-family: 'Russo One', sans-serif;
     font-weight: 400;
-    color: #fff;
+    color: white;
     font-size: 36px;
     text-transform: uppercase;
     transition: transform 0.1s linear;
@@ -224,7 +256,7 @@ body{
     pointer-events: none;
     position: fixed;
     padding: 0.3rem;
-    background-color: #fff;
+    background-color: white;
     border-radius: 50%;
     mix-blend-mode: difference;
     transition: transform 0.3s ease;
@@ -253,6 +285,61 @@ body{
     }
   }
 
-#contact h2{
+/*CONTACT*/
+
+.insta{
+    position: relative;
+    top: 500px;
+}
+#contact{
+    position: absolute;
     text-align: left;
-  }
+    color:rgb(168, 2, 2);
+}
+
+.email{
+    position: relative;
+    top: 550px;
+}
+
+
+/*ABOUT*/
+
+.zine{
+    position: relative;
+    top: 550px;
+}
+#whatszine{
+    position: absolute;
+    color: rgb(169, 34, 34);
+    top: -60px;
+}
+#zinedef h2{
+    position: absolute;
+}
+
+.artzine{
+    position: relative;
+    top: 650px;
+}
+#whatarewe{
+    position: absolute;
+    color:rgb(169, 34, 34);
+    top: -60px;
+}
+#warmarteriesis{
+    position: absolute;
+}
+
+.us{
+    position: relative;
+    top: 850px;
+}
+#whoarewe{
+    position: absolute;
+    color:rgb(169, 34, 34);
+    top: -60px;
+}
+#weare{
+    position: absolute;
+}
