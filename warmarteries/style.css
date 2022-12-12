@@ -12,6 +12,61 @@ body{
     left: 220px;
 }
 
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .hover-this {
+    transition: all 0.3s ease;
+  }
+  
+  span {
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    transition: transform 0.1s linear;
+  }
+  
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: white;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-this:hover ~ .cursor {
+    transform:translate(-50%, -50%) scale(8);
+  }
+  
+  @media(min-width: 900px) {
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  @media(max-width: 900px) {
+    nav {
+      top: 30%;
+    }
+    
+    .hover-this {
+      width: 100%;
+      padding: 20px 0;
+      display: inline-block;
+    }
+  }
+
 .catthing{
     position: relative;
 }
@@ -80,17 +135,22 @@ body{
 
 /*COLLECTION*/
 
-#catbutton{
+.container{
+    position: relative;
+}
+#fishbutton{
     padding: 0;
     border: none;
     background: none;
-    background-image: url('catthing.png');
-    background-size: 200px;
-    width: 200px;
-    height: 200px;
+    background-image: url('clickfish_.gif');
+    background-size: 500px;
+    width: 500px;
+    height: 350px;
     display: flex;
     margin: 40px;
     cursor: pointer;
+    top: 500px;
+    position: absolute;
 }
 
 .popup{
@@ -133,7 +193,7 @@ body{
 .open-popup{
     visibility: visible;
     top: 500%;
-    transform: translate(125%, 50%) scale(1); /*controls where popup appears*/
+    transform: translate(125%, 250%) scale(1); /*controls where popup appears*/
 }
 
 .popup button{
@@ -167,17 +227,23 @@ body{
     pointer-events: all;
 }
 
+.container2{
+    position: relative;
+}
 #butterflybutton{
     padding: 0;
     border: none;
     background: none;
-    background-image: url('eyebutterfly.png');
-    background-size: 200px;
-    width: 200px;
-    height: 200px;
+    background-image: url('clickbutterfly.gif');
+    background-size: 600px;
+    width: 600px;
+    height: 600px;
     display: flex;
     margin: 40px;
     cursor: pointer;
+    position: absolute;
+    left: 700px;
+    top: 500px;
 }
 
 .popup2{
@@ -254,67 +320,6 @@ body{
     pointer-events: all;
 }
 
-
-/*.nav-wrapper {
-    width: 100%;
-    height: 100vh;
-    background: #161616;
-  }*/
-  
-  nav {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-  }
-  
-  .hover-this {
-    transition: all 0.3s ease;
-  }
-  
-  span {
-    display: inline-block;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 36px;
-    text-transform: uppercase;
-    transition: transform 0.1s linear;
-  }
-  
-  .cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.3rem;
-    background-color: white;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    transition: transform 0.3s ease;
-  }
-  
-  .hover-this:hover ~ .cursor {
-    transform:translate(-50%, -50%) scale(8);
-  }
-  
-  @media(min-width: 900px) {
-    nav {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-  
-  @media(max-width: 900px) {
-    nav {
-      top: 30%;
-    }
-    
-    .hover-this {
-      width: 100%;
-      padding: 20px 0;
-      display: inline-block;
-    }
-  }
 
 /*CONTACT*/
 
