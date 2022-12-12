@@ -45,6 +45,41 @@ body{
     left: 100px;
 }
 
+.fireman{
+    position: relative;
+}
+#fireman{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+}
+
+.slaying{
+    position: relative;
+}
+#slaying{
+    width: 800px;
+    height: 900px;
+    position: absolute;
+    top: 1700px;
+    left: 600px;
+}
+
+.horribleintimacy{
+    position: relative;
+}
+#horrible{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 2150px;
+    left: 40px;
+}
+
+/*COLLECTION*/
+
 #catbutton{
     padding: 0;
     border: none;
@@ -55,8 +90,6 @@ body{
     height: 200px;
     display: flex;
     margin: 40px;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -144,8 +177,6 @@ body{
     height: 200px;
     display: flex;
     margin: 40px;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -302,6 +333,22 @@ body{
     top: 550px;
 }
 
+.location{
+    position: relative;
+    top: 620px;
+}
+
+.devil{
+    position: relative;
+}
+#devil{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+
 
 /*ABOUT*/
 
@@ -314,13 +361,13 @@ body{
     color: rgb(169, 34, 34);
     top: -60px;
 }
-#zinedef h2{
+#zinedef{
     position: absolute;
 }
 
 .artzine{
     position: relative;
-    top: 650px;
+    top: 700px;
 }
 #whatarewe{
     position: absolute;
@@ -333,7 +380,7 @@ body{
 
 .us{
     position: relative;
-    top: 850px;
+    top: 890px;
 }
 #whoarewe{
     position: absolute;
